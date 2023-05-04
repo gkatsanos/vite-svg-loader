@@ -1,17 +1,17 @@
 {
-  "name": "vite-svg-loader",
-  "version": "4.0.0",
-  "description": "Vite plugin to load SVG files as Vue components",
-  "keywords": [
-    "vite",
-    "vue",
-    "svg"
-  ],
+  "name": "@gkatsanos/vite-svg-loader",
+  "version": "1.0.0",
+  "description": "A Vite loader to manage SVG files",
   "main": "./index.js",
   "types": "./index.d.ts",
-  "dependencies": {
-    "@vue/compiler-sfc": "^3.2.20",
-    "svgo": "^3.0.2"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gkatsanos/vite-svg-loader.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gkatsanos/vite-svg-loader/issues"
   },
   "devDependencies": {
     "cypress": "^8.6.0",
@@ -22,18 +22,6 @@
     "cypress": "cypress run",
     "example:build": "cd ./examples/vue && npm ci && npm run build",
     "example:serve": "cd ./examples/vue && npm run serve"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/gkatsanos/vite-svg-loader.git"
-  },
-  "author": {
-    "name": "Jan-Paul Kleemans",
-    "email": "jpkleemans@gmail.com"
-  },
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/gkatsanos/vite-svg-loader/issues"
   },
   "homepage": "https://github.com/gkatsanos/vite-svg-loader#readme"
 }
