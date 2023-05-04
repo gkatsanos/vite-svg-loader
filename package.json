@@ -1,6 +1,6 @@
 {
   "name": "@gkatsanos/vite-svg-loader",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "A Vite loader to manage SVG files",
   "main": "./index.js",
   "types": "./index.d.ts",
