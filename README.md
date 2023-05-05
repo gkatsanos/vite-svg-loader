@@ -50,9 +50,9 @@ import iconRaw from './my-icon.svg?raw'
 ```
 
 ### Component
-SVGs can be explicitly imported as Vue components using the `?component` suffix:
+SVGs can be explicitly imported as Vue components using the `?inline` suffix:
 ```js
-import IconComponent from './my-icon.svg?component'
+import IconComponent from './my-icon.svg?inline'
 // <IconComponent />
 ```
 
@@ -94,7 +94,7 @@ import IconWithoutOptimizer from './my-icon.svg?skipsvgo'
 ```
 
 ### Use with TypeScript
-If you use the loader in a Typescript project, you'll need to import your svg files with the `?component` param: `import MyIcon from './my-icon.svg?component'`.
+If you use the loader in a Typescript project, you'll need to import your svg files with the `?inline` param: `import MyIcon from './my-icon.svg?inline'`.
 
 You'll also need to reference the type definitions:
 ```ts
