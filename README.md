@@ -1,4 +1,4 @@
-*This is a fork of https://github.com/jpkleemans/vite-svg-loader with the sole difference that it will not ignore imports with other queries.*
+*This is a fork of https://github.com/jpkleemans/vite-svg-loader with the sole difference that it replaces `component` with `inline` to make it backwards compatible with components using the webpack svg loader.*
 
 # Vite SVG loader
 Vite plugin to load SVG files as Vue components, using SVGO for optimization.
