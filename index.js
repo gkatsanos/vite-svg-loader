@@ -5,13 +5,17 @@ const { optimize: optimizeSvg } = require('svgo')
 module.exports = function svgLoader (options = {}) {
   const { svgoConfig, svgo, defaultImport } = options
 
-  const svgRegex = /\.svg(\?(raw|component|skipsvgo))?$/
+  const svgRegex = /\.svg(\?(raw|inline|skipsvgo))?$/
 
   return {
     name: 'svg-loader',
     enforce: 'pre',
 
     async load (id) {
+      if (!id.match(svgRegex)) {
+        return
+      }
+
       const [path, query] = id.split('?', 2)
 
       const importType = query || defaultImport
