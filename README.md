@@ -1,3 +1,5 @@
+*This is a fork of https://github.com/jpkleemans/vite-svg-loader with the sole difference that it replaces `component` with `inline` to make it backwards compatible with components using the webpack svg loader.*
+
 # Vite SVG loader
 Vite plugin to load SVG files as Vue components, using SVGO for optimization.
 
@@ -48,9 +50,9 @@ import iconRaw from './my-icon.svg?raw'
 ```
 
 ### Component
-SVGs can be explicitly imported as Vue components using the `?component` suffix:
+SVGs can be explicitly imported as Vue components using the `?inline` suffix:
 ```js
-import IconComponent from './my-icon.svg?component'
+import IconComponent from './my-icon.svg?inline'
 // <IconComponent />
 ```
 
@@ -92,18 +94,9 @@ import IconWithoutOptimizer from './my-icon.svg?skipsvgo'
 ```
 
 ### Use with TypeScript
-If you use the loader in a Typescript project, you'll need to import your svg files with the `?component` param: `import MyIcon from './my-icon.svg?component'`.
+If you use the loader in a Typescript project, you'll need to import your svg files with the `?inline` param: `import MyIcon from './my-icon.svg?inline'`.
 
 You'll also need to reference the type definitions:
 ```ts
 /// <reference types="vite-svg-loader" />
 ```
-
-## Sponsors
-
-<a href="https://www.nexxtmove.nl/" target="_blank">
-  <img src="https://raw.githubusercontent.com/jpkleemans/attribute-events/gh-pages/nexxtmove-logo.svg" alt="Nexxtmove Logo" width="200">
-</a>
-
-Thanks to <a href="https://www.nexxtmove.nl/" target="_blank">Nexxtmove</a> for sponsoring the development of this project.  
-Your logo or name here? [Sponsor this project](https://github.com/sponsors/jpkleemans).
