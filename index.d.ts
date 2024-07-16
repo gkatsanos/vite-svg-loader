@@ -1,4 +1,4 @@
-declare module 'vite-svg-loader' {
+declare module '@gkatsanos/vite-svg-loader' {
   import { Plugin } from 'vite'
   import { Config } from 'svgo'
   function svgLoader(options?: { svgoConfig?: Config, svgo?: boolean, defaultImport?: 'url' | 'raw' | 'component' }): Plugin
